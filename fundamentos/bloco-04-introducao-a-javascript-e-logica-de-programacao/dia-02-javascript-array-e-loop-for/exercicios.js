@@ -1,6 +1,8 @@
 let numbers = [5, 122, 3, 19, 70, 8, 100, 2, 35, 333];
 
 // Exercicio 8 e 9
+console.log('\nExercicio 8 e 9: ');
+
 let array8 = [];
 let valor8 = 1;
 
@@ -16,6 +18,8 @@ for (let index = 0; index<array8.length; index++){
 console.log(resultado8)
 
 // Exercicio 7
+console.log('\nExercicio 7: ');
+
 let posicao7 = 0;
 
 for(let i7 = 0; i7 < numbers.length; i7++){
@@ -27,6 +31,7 @@ for(let i7 = 0; i7 < numbers.length; i7++){
 console.log("Menor número é:", numbers[posicao7])
 
 // Exercicio 6
+console.log('\nExercicio 6: ');
 
 let qtdImpares = 0;
 
@@ -38,6 +43,8 @@ for (let i3 = 0; i3 < numbers.length ; i3++) {
 console.log("Quantidade de impares:", qtdImpares)
 
 // Exercicio 5
+console.log('\nExercicio 5: ');
+
 let posicao = 0;
 
 for(let i2 = 0; i2 < numbers.length; i2++){
@@ -49,6 +56,7 @@ for(let i2 = 0; i2 < numbers.length; i2++){
 console.log("Maior número é:", numbers[posicao])
 
 // Exercicio 3 e 4
+console.log('\nExercicio 3 e 4: ');
 
 let soma3 = 0,  media;
 
@@ -65,6 +73,8 @@ if (media > 20) {
 }
 
 // Exercicio 2
+console.log('\nExercicio 2: ');
+
 let soma2 = 0;
 
 for (let i = 0 ; i < numbers.length ; i++){
@@ -74,6 +84,7 @@ for (let i = 0 ; i < numbers.length ; i++){
 console.log(soma2)
 
 // Exercicio 1
+console.log('\nExercicio 1: ');
 
 console.log(numbers)
 
