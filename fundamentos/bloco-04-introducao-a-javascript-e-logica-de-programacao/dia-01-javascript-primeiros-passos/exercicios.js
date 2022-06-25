@@ -56,7 +56,7 @@ if (a5 + b5 + c5 == 180){
 
 // Exercicio 6
 
-let peca = 'Bispo'
+let peca = 'Bispo';
 peca = peca.toLocaleLowerCase();
 
 switch (peca){
@@ -64,7 +64,7 @@ switch (peca){
     console.log('diagonal');
     break;
   case 'rainha':
-    console.log('diagonail, horizontal e vertical');
+    console.log('diagonal, horizontal e vertical');
     break;
   case 'torre':
     console.log('horizontal e vertical');
