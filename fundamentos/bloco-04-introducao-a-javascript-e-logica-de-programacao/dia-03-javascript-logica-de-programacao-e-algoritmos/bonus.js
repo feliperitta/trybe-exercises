@@ -132,20 +132,20 @@ for(let index = 0; index < n; index+=2){
 // 28 linhas do for
 console.log(texto);
 
-// Exercicio 6
-console.log('\nExercicio 6:');
+// // Exercicio 6
+// console.log('\nExercicio 6:');
 
-let numero = 8;
-let qtdDivisivel = 0;
+// let numero = 8;
+// let qtdDivisivel = 0;
 
-for(let index = 1; index<=numero; index++){
-  if(numero % index == 0){
-    qtdDivisivel++;
-  }
-}
+// for(let index = 1; index<=numero; index++){
+//   if(numero % index == 0){
+//     qtdDivisivel++;
+//   }
+// }
 
-if(qtdDivisivel === 2){
-  console.log('Numero', numero, 'é um numero primo.');
-} else {
-  console.log('Numero', numero, 'não é um numero primo.');
-}
+// if(qtdDivisivel === 2){
+//   console.log('Numero', numero, 'é um numero primo.');
+// } else {
+//   console.log('Numero', numero, 'não é um numero primo.');
+// }

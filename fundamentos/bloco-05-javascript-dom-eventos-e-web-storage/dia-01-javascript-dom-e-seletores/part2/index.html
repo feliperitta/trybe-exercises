@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <section>
+      <h1 class="nomeDaClasse">Texto 1 <span>Parágrafo h1!</span></h1>
+      <h2 class="nomeDaClasse">Texto 1 <span>Parágrafo h2!</span></h2>
+      <h3 class="nomeDaClasse">Texto 1 <span>Parágrafo h3!</span></h3>
+      <h4 class="nomeDaClasse">Texto 1 <span>Parágrafo h4!</span></h4>
+      <h5 class="nomeDaClasse">Texto 1 <span>Parágrafo h5!</span></h4>
+      <h5 class="nomeDaClasse">Texto 2 <span>Parágrafo h5!</span></h4>
+      <h5 class="nomeDaClasse">Texto 3 <span>Parágrafo h5!</span></h4>
+      <h5 class="nomeDaClasse">Texto 4 <span>Parágrafo h5!</span></h4>
+      
+    </section>
+    <span id="spanId"></span>
+    <span id="spanTag"></span>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      const page_title = document.getElementById('page-title');
+      page_title.style.color = '#f3f';
+
+      const secondParagraph = document.getElementById('second-paragraph');
+      secondParagraph.innerHTML = 'ui'
+
+      const nomeDaClasse = document.getElementsByClassName('nomeDaClasse');
+      document.getElementById('spanId').innerHTML = nomeDaClasse;
+
+      console.log(nomeDaClasse)
+
+      const h5TagName = document.getElementsByTagName('h5');
+      document.getElementById('spanTag').innerHTML = h5TagName;
+
+      console.log(h5TagName)
+      
+    </script>
+  </body>
+</html>
