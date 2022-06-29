@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 1.1 
+      const createEmptyH1 = document.createElement('h1');
+      const bodyElement = document.querySelector('body');
+      bodyElement.appendChild(createEmptyH1).innerText = 'Exercício 5.2 - JavaScript DOM';
+      // 1.2
+      const createEmptyMain = document.createElement('main');
+      bodyElement.appendChild(createEmptyMain).className = 'main-content';
+      // 1.3
+      const mainContentElement = document.querySelector('.main-content');
+      const createEmptySection = document.createElement('section');
+      mainContentElement.appendChild(createEmptySection).className = 'center-content';
+      // 1.4
+      const centerContentElement = document.querySelector('.center-content');
+      const createEmptyP = document.createElement('p');
+      centerContentElement.appendChild(createEmptyP).innerText = 'Us guri nem tão.';
+      // 1.5
+      mainContentElement.appendChild(document.createElement('section')).className = 'left-content';
+      // 1.6
+      mainContentElement.appendChild(document.createElement('section')).className = 'right-content';
+      // 1.7
+      const leftContent = document.querySelector('.left-content');
+      const imgLeftContent = leftContent.appendChild(document.createElement('img'));
+      imgLeftContent.className = 'small-image';
+      imgLeftContent.src = 'https://picsum.photos/200';
+      // 1.8
+      let liItems = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      const createEmptyUl = document.createElement('ul');
+      const rightContent = document.querySelector('.right-content');
+      rightContent.appendChild(createEmptyUl);
+      const ulElement = rightContent.querySelector('ul');
+      //console.log(ulElement)
+      for(let item of liItems){
+        ulElement.appendChild(document.createElement('li')).innerText = item;
+      }
+      // 1.9
+      for(let index = 0; index<3; index++){
+        mainContentElement.appendChild(document.createElement('h3'));
+      }
+      // 2.1
+      const h1Element = document.querySelector('h1');
+      h1Element.classList.add('title');
+      // 2.2
+      for(let item of bodyElement.querySelectorAll('h3')){
+        item.classList.add('description');
+      }
+      // 2.3
+      leftContent.remove();
+      // 2.4
+      rightContent.style = 'margin-right: auto';
+      // 2.5
+      centerContentElement.style = 'background-color: #0a0';
+      // 2.6
+      for(let index = 0; index<2; index++){
+        ulElement.lastElementChild.remove();
+      }
+    </script>
+  </body>
+</html>
