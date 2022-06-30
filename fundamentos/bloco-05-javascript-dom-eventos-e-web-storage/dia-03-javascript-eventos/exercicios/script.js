@@ -157,7 +157,7 @@ function commitments() {
       taskInput.value = '';
     }
   });
-  document.addEventListener('keydown', (event) => {
+  taskInput.addEventListener('keydown', (event) => {
     if(event.key === 'Enter'){
       if(taskInput.value.length <= 0){
         alert('Erro.');
