@@ -89,13 +89,13 @@ function countMathStudents() {
   let count = 0;
   for (let index = 1; index <= Object.keys(allLessons).length; index++) {
     if(allLessons[`lesson${index}`]['materia'] === 'Matemática'){
-      count++;
+      count+= allLessons[`lesson${index}`]['numeroEstudantes'];
     }
   }
   return count;
 }
 
-//console.log(countMathStudents());
+console.log(countMathStudents());
 
 // 2nd Bonus
 function createReport(object, name) {
@@ -117,9 +117,8 @@ function createReport(object, name) {
   }
   if(count === 0){
     return 'Professor(a) não encontrado(a).';
-  } else {
-    return newObject;
   }
+  return newObject;  
 }
 
-console.log(createReport(allLessons, 'Maria Clara'))
+//console.log(createReport(allLessons, 'Maria Clara'))
