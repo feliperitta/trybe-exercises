@@ -1,12 +1,11 @@
 import books from './books.js'
 
 function authorWith3DotsOnName() {
-  const bookName = '';
   const book3Dots = books.filter((book) => {
     const split = book.author.name.split(' ');
     let count = 0;
     for (let i = 0; i < split.length; i += 1) {
-      if (split[i].includes('.')) {
+      if (split[i].endsWith('.')) {
         count += 1;
       }
     }
